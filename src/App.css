@@ -39,11 +39,19 @@ button:active {
 }
 
 .SignUpMsg {
-    background-color: antiquewhite;
+    background-color: #fff;
     color: green;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
-    transform: translate(0px, 15px);
-    transition: transform 0.3s ease-in;
+    height: 130px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.SignUpMsg button {
+    width: 60%;
+    align-self: center;
 }

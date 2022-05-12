@@ -77,8 +77,8 @@ function App() {
         setValues({ ...values, [e.target.name]: e.target.value });
     };
 
-    return (
-        <div className="App">
+    const formComponent = (
+        <>
             <pre>{JSON.stringify(values, undefined, 2)}</pre>
             <form onSubmit={handleSubmit}>
                 <h1>Sign Up</h1>
@@ -88,15 +88,22 @@ function App() {
                         {...input}
                         value={values[input.name]}
                         handleChange={handleChange}
+                        isSubmited={isSubmited}
                     />
                 ))}
-                {isSubmited && (
-                    <div className="SignUpMsg">Signed up succesfully!</div>
-                )}
                 <button>Submit</button>
             </form>
+        </>
+    );
+
+    const signedUp = (
+        <div className="SignUpMsg">
+            <h3>Signed up successfully!</h3>
+            <button onClick={(e) => setIsSubmited(false)}>Return</button>
         </div>
     );
+
+    return <div className="App">{isSubmited ? signedUp : formComponent}</div>;
 }
 
 export default App;
