@@ -31,4 +31,9 @@ button {
     font-weight: bold;
     border-radius: 5px;
     margin: 15px 0 30px 0;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
 }
