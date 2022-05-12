@@ -37,3 +37,13 @@ button {
 button:active {
     transform: scale(0.98);
 }
+
+.SignUpMsg {
+    background-color: antiquewhite;
+    color: green;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    transform: translate(0px, 15px);
+    transition: transform 0.3s ease-in;
+}

@@ -4,13 +4,16 @@ import "./App.css";
 import FormInput from "./Components/FormInput";
 
 function App() {
-    const [values, setValues] = useState({
+    const initialState = {
         username: "",
         email: "",
         birthday: "",
         password: "",
         confirmPassword: "",
-    });
+    };
+    const [values, setValues] = useState(initialState);
+
+    const [isSubmited, setIsSubmited] = useState(false);
 
     const inputs = [
         {
@@ -66,6 +69,8 @@ function App() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSubmited(true);
+        setValues(initialState);
     };
 
     const handleChange = (e) => {
@@ -76,7 +81,7 @@ function App() {
         <div className="App">
             <pre>{JSON.stringify(values, undefined, 2)}</pre>
             <form onSubmit={handleSubmit}>
-                <h1>Register</h1>
+                <h1>Sign Up</h1>
                 {inputs.map((input) => (
                     <FormInput
                         key={input.id}
@@ -85,7 +90,9 @@ function App() {
                         handleChange={handleChange}
                     />
                 ))}
-
+                {isSubmited && (
+                    <div className="SignUpMsg">Signed up succesfully!</div>
+                )}
                 <button>Submit</button>
             </form>
         </div>
