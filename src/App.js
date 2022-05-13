@@ -87,7 +87,6 @@ function App() {
                         {...input}
                         value={values[input.name]}
                         handleChange={handleChange}
-                        isSubmited={isSubmited}
                     />
                 ))}
                 <button>Submit</button>
