@@ -79,7 +79,6 @@ function App() {
 
     const formComponent = (
         <>
-            <pre>{JSON.stringify(values, undefined, 2)}</pre>
             <form onSubmit={handleSubmit}>
                 <h1>Sign Up</h1>
                 {inputs.map((input) => (
