@@ -62,3 +62,19 @@ button:active {
         justify-content: flex-start;
     }
 }
+
+@media (min-width: 2000px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    form {
+        width: 30%;
+        min-height: 60%;
+    }
+
+    button {
+        font-size: 23px;
+        height: 70px;
+    }
+}

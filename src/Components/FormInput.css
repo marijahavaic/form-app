@@ -31,3 +31,19 @@ input:invalid[focused="true"] {
 input:invalid[focused="true"] ~ span {
     display: block;
 }
+
+@media (min-width: 2000px) {
+    .FormInput {
+        width: 90%;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+}
