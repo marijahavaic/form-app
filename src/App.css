@@ -59,6 +59,8 @@ button:active {
 
 @media (max-width: 600px) {
     .App {
+        margin: 0;
+
         background-image: none;
         justify-content: flex-start;
     }
