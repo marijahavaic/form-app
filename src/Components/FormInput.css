@@ -39,7 +39,7 @@ input[type="date"] {
     min-height: 1.2em;
 }
 
-@media (min-width: 2550px) {
+@media (min-width: 2560px) {
     .FormInput {
         width: 90%;
         margin: auto;
@@ -52,5 +52,10 @@ input[type="date"] {
 
     input {
         font-size: 1.5rem;
+    }
+
+    span {
+        font-size: 1rem;
+        display: none;
     }
 }
