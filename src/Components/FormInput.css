@@ -32,6 +32,13 @@ input:invalid[focused="true"] ~ span {
     display: block;
 }
 
+input[type="date"] {
+    display: block;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    min-height: 1.2em;
+}
+
 @media (min-width: 2000px) {
     .FormInput {
         width: 90%;
