@@ -25,7 +25,7 @@ npm start
 
 ### Work in Progress
 
-- Add Show and Hide Password
+- Add show and hide password
 - Add password strength scale
 
 <!-- ### Known Issues -->
