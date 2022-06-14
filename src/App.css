@@ -63,9 +63,14 @@ button:active {
         width: auto;
         background-image: none;
         justify-content: flex-start;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
     }
     form {
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 0;
     }
 }
